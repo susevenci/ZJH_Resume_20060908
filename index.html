@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZJH</title>
+    <!-- 内嵌式引入js -->
+     <script>
+        alert('HELLO ZJH');
+        console.log('控制台打印：个人简历项目');
+     </script>
+     <!-- 外部式引入js -->
+     <script type="text/javascript" src="s1.js"></script>
+
+    <link rel="stylesheet" href="s1.css">
 </head>
 <body>
-
+    <h1>个人简历</h1>
     <p>姓名：周家弘</p>
     <p>性别：男</p>
     <p>籍贯：广东高州</p>
     <p>居住地：广东珠海</p>
     <p>教育经历：广东科学技术职业学院在读</p>
- 
+    <!-- 行内式引入js -->
+    <input type="button" value="提交" onclick="alert('HELLO ZJH')">
+    <a href="javascript:alert('发送成功---');">发送邮件</a>
 </body>
 </html>
