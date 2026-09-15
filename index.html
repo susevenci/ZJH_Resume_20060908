@@ -8,6 +8,11 @@
      <script>
         alert('HELLO ZJH');
         console.log('控制台打印：个人简历项目');
+        //写入函数
+        function say(msg)    {
+            console.log(msg)
+            alert(msg)
+        }
      </script>
      <!-- 外部式引入js -->
      <script type="text/javascript" src="s1.js"></script>
@@ -24,5 +29,17 @@
     <!-- 行内式引入js -->
     <input type="button" value="提交" onclick="alert('HELLO ZJH')">
     <a href="javascript:alert('发送成功---');">发送邮件</a>
+    <br>
+    <a href="javascript:say('hello world');">say</a>
+
+    <!-- js事件学习 -->
+     <!-- onclick onfocus onmouseover -->
+     <input id="btn" type="button" value="点击我">
+     <script>
+        var oBtn = document.getElementById('btn');
+        oBtn.onmouseover = function(){
+            alert("你碰到我了！")
+        }
+     </script>
 </body>
 </html>
